@@ -6,15 +6,15 @@ const Header: React.FC = () => {
   return (
     <Flex as="header" justify="space-between" align="center" p={4}>
       <Flex direction="row" align="center" gap={3}>
-        <Link href="https://example.com">Home</Link>
-        <Link href="https://example.com/projects">Projects</Link>
-        <Link href="https://example.com/about">About</Link>
+        <Link href="#">Home</Link>
+        <Link href="#">Projects</Link>
+        <Link href="#">About</Link>
       </Flex>
       <Box>
-        <Link href="https://github.com/example" mr={4}>
+        <Link href="https://github.com/raniakbr" mr={4}>
           GitHub
         </Link>
-        <Link href="https://linkedin.com/in/example">LinkedIn</Link>
+        <Link href="https://www.linkedin.com/in/rania-kebour-764a1a222/">LinkedIn</Link>
       </Box>
     </Flex>
   );
