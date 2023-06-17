@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { Badge, Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 
 import React from "react";
 
@@ -12,14 +12,17 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, demoLink, repoLink }) => {
   return (
     <Box borderWidth={1} borderRadius="md" p={4} mb={4}>
-      <Heading as="h3" size="md" mb={2}>
-        {title}
-      </Heading>
+      <Flex gap={4} alignItems="flex-start" justifyContent="space-between">
+        <Heading as="h3" size="md" mb={2}>
+          {title}
+        </Heading>
+        <Badge colorScheme="blackAlpha">Coming soon</Badge>
+      </Flex>
       <Text mb={2}>{description}</Text>
-      <Button as="a" href={demoLink} colorScheme="blue" mr={2}>
+      <Button as="a" href={demoLink} colorScheme="blue" mr={2} isDisabled>
         Demo
       </Button>
-      <Button as="a" href={repoLink} colorScheme="gray">
+      <Button as="a" href={repoLink} colorScheme="gray" isDisabled>
         Repo
       </Button>
     </Box>
