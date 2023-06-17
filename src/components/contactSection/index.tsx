@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
           <FormLabel>Message</FormLabel>
           <Input as="textarea" rows={4} required />
         </FormControl>
-        <Button type="submit" colorScheme="blue">
+        <Button width={"100%"} type="submit" colorScheme="blue">
           Submit
         </Button>
       </form>
